@@ -1,6 +1,6 @@
 # Melanoma /Skin Cancer Detection Using CNN Detection Project
 
-**SkinLink for Melanoma Detection**
+## **SkinLink for Melanoma Detection**
 
 ##**Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
@@ -11,12 +11,13 @@ Skin cancer is the most common type of cancer. Early detection is crucial for ef
 **Benefits to Patients & Medical Professionals**
 For Patients: Faster and more accurate diagnosis can lead to earlier intervention, reducing the risk of advanced disease and improving survival rates. Patients gain quicker access to diagnostic results, which can be life-saving.
 
-<u>For Medical Professionals</u>: Improved diagnostic tools can reduce dermatologists' workload, allow for more efficient use of healthcare resources, and help in standardizing diagnosis across different settings. This can lead to cost savings and better patient outcomes.
+**For Medical Professionals##: Improved diagnostic tools can reduce dermatologists' workload, allow for more efficient use of healthcare resources, and help in standardizing diagnosis across different settings. This can lead to cost savings and better patient outcomes.
 
 **Project Summary**
 Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
-Gradio Applications
+
+***Gradio Applications***
 1. User Application
 The first Gradio application is designed for users (patients). In this application, users can upload images of their skin lesions. The app then utilizes the trained CNN model to predict whether the lesion is benign or malignant. This quick and accessible tool allows users to get an initial assessment of their skin condition, which can prompt further medical consultation if necessary.
 
