@@ -1,33 +1,33 @@
-# Project-3_Group-9
-Melanoma /Skin Cancer Detection Using CNN Detection Project
+# **Project-3_Group-9**
+***Melanoma /Skin Cancer Detection Using CNN Detection Project***
 
-**Executive Summary**
+##**Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
-'Early Detection is Key'
+**Early Detection is Key**
 Skin cancer is the most common type of cancer. Early detection is crucial for effective treatment. Visual examination by a dermatologist, followed by a biopsy, is the standard procedure for diagnosis. This project aims to provide a tool that helps in the early detection of melanoma by analyzing images of skin lesions.
 
-Benefits to Patients & Medical Professionals
+**Benefits to Patients & Medical Professionals**
 For Patients: Faster and more accurate diagnosis can lead to earlier intervention, reducing the risk of advanced disease and improving survival rates. Patients gain quicker access to diagnostic results, which can be life-saving.
 
-For Medical Professionals: Improved diagnostic tools can reduce dermatologists' workload, allow for more efficient use of healthcare resources, and help in standardizing diagnosis across different settings. This can lead to cost savings and better patient outcomes.
+<u>For Medical Professionals</u>: Improved diagnostic tools can reduce dermatologists' workload, allow for more efficient use of healthcare resources, and help in standardizing diagnosis across different settings. This can lead to cost savings and better patient outcomes.
 
-Project Summary
+**Project Summary**
 Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
 
-Data Preprocessing
+**Data Preprocessing**
 Resizing: Images are resized to 300x300 pixels.
 Normalization: Pixel values are scaled to the range [0, 1].
 Data Augmentation: Techniques such as random rotation, translation, zoom, and flipping are applied to increase the diversity of the training set and improve the model’s accuracy.
 
-Model Building
+**Model Building**
 A custom CNN architecture was built from scratch using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
 
-Model Training
-Optimizer: Adam optimizer
-Loss Function: Categorical cross-entropy loss
-Training: Performed over multiple epochs with early stopping and learning rate reduction callbacks to optimize performance.
+**Model Training**
+<u>Optimizer</u>: Adam optimizer
+<u>Loss Function</u> Categorical cross-entropy loss
+<u>Training</u> Performed over multiple epochs with early stopping and learning rate reduction callbacks to optimize performance.
 
 Evaluation
 Performance Metrics: The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics.
