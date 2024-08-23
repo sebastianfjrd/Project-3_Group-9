@@ -1,61 +1,69 @@
 # Project-3_Group-9
-Project 3
-FINAL PROJECT REQUIREMENTS:
-Using CNN model  to attack Skin Cancer! 
+Melanoma /Skin Cancer Detection Using CNN Detection Project
 
-This project focuses on detecting melanoma through images. Melanoma is a dangerous form of skin cancer. Early detection and accurate diagnosis are crucial for patient outcomes, making this a problem worth solving.
-Using Kaggle, we found a large dataset that was sufficiently large enough to effectively train our ML model or neural network with a high degree of accuracy, to ensure that your results are reliable.
+**Executive Summary**
+This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
-The dataset used in this project consists of 10,605 images of skin lesions, categorized as benign or malignant. This dataset is sufficiently large enough for training a convolutional neural network (CNN) model with high accuracy.
-Evaluate the trained model(s) using testing data. Include any calculations, metrics, or visualizations needed to evaluate the performance.
+'Early Detection is Key'
+Skin cancer is the most common type of cancer. Early detection is crucial for effective treatment. Visual examination by a dermatologist, followed by a biopsy, is the standard procedure for diagnosis. This project aims to provide a tool that helps in the early detection of melanoma by analyzing images of skin lesions.
 
-The model’s performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. Visualizations like the ROC curve and Precision-Recall curve are also included to assess model performance.
-We used 
-TensorFlow/Keras: Used to build, train, and evaluate the CNN model for melanoma detection.
-We also used an additional library or technology which was not covered in class, such as:
+Benefits to Patients & Medical Professionals
+For Patients: Faster and more accurate diagnosis can lead to earlier intervention, reducing the risk of advanced disease and improving survival rates. Patients gain quicker access to diagnostic results, which can be life-saving.
 
-Potential to integrate PyTorch or Whisper (OpenAI’s automatic speech recognition system), or other advanced technologies for future iterations of this project, like
-Gradio speech to text. 
+For Medical Professionals: Improved diagnostic tools can reduce dermatologists' workload, allow for more efficient use of healthcare resources, and help in standardizing diagnosis across different settings. This can lead to cost savings and better patient outcomes.
 
-PROJECT SUMMARY:
-Dataset: The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
+Project Summary
+Dataset
+The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
 
-Data Preprocessing:
+Data Preprocessing
+Resizing: Images are resized to 300x300 pixels.
+Normalization: Pixel values are scaled to the range [0, 1].
+Data Augmentation: Techniques such as random rotation, translation, zoom, and flipping are applied to increase the diversity of the training set and improve the model’s accuracy.
 
-Images are resized to 300x300 pixels.
-Data normalization is applied by scaling pixel values to the range [0, 1].
-Data augmentation techniques, including random rotation, translation, zoom, and flipping, are used to increase the diversity of the training set and improve the model’s accuracy.
+Model Building
+A custom CNN architecture was built from scratch using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
 
-Model Building:
+Model Training
+Optimizer: Adam optimizer
+Loss Function: Categorical cross-entropy loss
+Training: Performed over multiple epochs with early stopping and learning rate reduction callbacks to optimize performance.
 
-A custom Convolutional Neural Network (CNN) architecture is built from scratch using TensorFlow/Keras.
-The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers.
-Regularization techniques like Dropout and L2 regularization are applied to prevent overfitting.
+Evaluation
+Performance Metrics: The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics.
+Visualizations: ROC and Precision-Recall curves were plotted to assess model performance. Confusion matrix visualizations were also used.
 
-Model Training:
+Future Research & Improvements
+Advanced Architectures: Consider incorporating architectures like ResNet or EfficientNet, or applying transfer learning with pretrained models.
+Additional Data Augmentation: Experiment with additional data augmentation techniques or synthetic data generation to improve model generalization.
+Integration of Advanced Technologies: Potential to integrate technologies like PyTorch, Whisper (OpenAI’s automatic speech recognition system), or Gradio for enhanced user interaction.
 
-The model is compiled using the Adam optimizer and categorical cross-entropy loss.
-Training is performed over multiple epochs, with early stopping and learning rate reduction callbacks to optimize model performance.
+Gradio Application: SkinLink, the Melanoma Detector
 
-RESULTS AND CONCLUSIONS:
-Output:
+Overview
+SkinLink is a user-friendly Gradio application that allows patients to upload images of their skin lesions for analysis. The application uses a trained CNN model to predict the likelihood of melanoma. The results can be reviewed by doctors, who can then provide feedback to the patients. The app includes a bonus feature: language translation, enabling doctors to communicate results to patients who may not speak English.
 
-The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics that indicate strong performance in detecting melanoma from images.
+Features
 
-Model Details:
+Image Upload: Patients can upload images of their skin lesions.
+Prediction: The model predicts whether the lesion is benign or malignant.
+Doctor Feedback: Doctors can review the results and provide feedback.
+Language Translation: Translation feature to help communicate with non-English speaking patients.
 
-Custom CNN Architecture: Built from scratch, featuring convolutional layers for feature extraction, max pooling for down-sampling, and dense layers for classification.
-Regularization: Applied Dropout and L2 regularization to prevent overfitting.
-Callbacks: Utilized ModelCheckpoint, EarlyStopping, and ReduceLROnPlateau to enhance the model’s performance and prevent overfitting.
+Future Improvements for the Gradio App
+Enhanced Interactivity: Add more interactive features like voice input using Whisper.
+Expanded Language Support: Include more languages for translation to cater to a broader audience.
+Advanced Visualizations: Integrate advanced visualizations to better explain the predictions to the patients and doctors.
 
-Test Set Evaluation:
+Model Performance Metrics Overview
+Title: Model Performance Metrics Overview
+Subtitle: Evaluating Accuracy, Precision, and Loss Across Training Epochs
 
-The model’s performance is evaluated on a separate test set, with the accuracy, loss, confusion matrix, and classification report providing insights into its effectiveness.
-Future Improvements:
+This image showcases the model's performance metrics, including the ROC curve, Precision-Recall curve, training accuracy, and training loss over multiple epochs. The high AUC-ROC and precision-recall scores indicate strong model performance, while the accuracy and loss plots highlight the model's training and validation performance over time.
 
-Incorporate advanced architectures like ResNet or EfficientNet, or explore transfer learning with pretrained models to further enhance accuracy.
-Experiment with additional data augmentation techniques or synthetic data generation to improve model generalization.
-Prediction and Visualization:
+Making & Optimizing the Model
+Title: Making & Optimizing the Model
+Subtitle: How We Refined Our CNN Model to Ensure High Accuracy & Effective Generalization, Preparing It for Real-World Applications
 
-The final model’s predictions are evaluated using confusion matrices and classification reports.
-ROC and Precision-Recall curves are plotted to visualize the model’s performance across different thresholds.
+
+This image outlines the steps taken in refining the CNN model, from defining the architecture to fine-tuning the model for optimal performance. The process included the use of various callbacks, training and model evaluation techniques, and fine-tuning with TensorFlow Keras optimizers to achieve a high accuracy score of 93%.
