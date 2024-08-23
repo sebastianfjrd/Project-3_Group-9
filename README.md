@@ -1,7 +1,7 @@
 # Melanoma /Skin Cancer Detection Using CNN Detection Project
 
-![SkinLink for Melanoma Detection]
-<img src="[path_to_your_image](https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8)" alt="Alt Text" width="300" height="200"/>
+##SkinLink for Melanoma Detection##
+<img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="300" height="200"/>
 
 
 ![Physician's Assistant for Melanoma Detection](https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f)
