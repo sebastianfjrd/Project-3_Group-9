@@ -1,5 +1,10 @@
-# **Project-3_Group-9**
-***Melanoma /Skin Cancer Detection Using CNN Detection Project***
+# Melanoma /Skin Cancer Detection Using CNN Detection Project
+
+![SkinLink for Melanoma Detection](https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8)
+
+
+![Physician's Assistant for Melanoma Detection](https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f)
+
 
 ##**Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
@@ -15,6 +20,8 @@ For Patients: Faster and more accurate diagnosis can lead to earlier interventio
 **Project Summary**
 Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
+
+![Sample Images](https://github.com/user-attachments/assets/7cd363b3-bc0d-41d9-b70d-89d71095d013)
 
 **Data Preprocessing**
 Resizing: Images are resized to 300x300 pixels.
