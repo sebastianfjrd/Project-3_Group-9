@@ -25,45 +25,48 @@ Data Augmentation: Techniques such as random rotation, translation, zoom, and fl
 A custom CNN architecture was built from scratch using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
 
 **Model Training**
-<u>Optimizer</u>: Adam optimizer
-<u>Loss Function</u> Categorical cross-entropy loss
-<u>Training</u> Performed over multiple epochs with early stopping and learning rate reduction callbacks to optimize performance.
+<u>Optimizeu<u>: Adam optimizer
+<u>Loss Function<u>: Categorical cross-entropy loss
+<u>Training<u>: Performed over multiple epochs with early stopping and learning rate reduction callbacks to optimize performance.
 
-Evaluation
-Performance Metrics: The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics.
-Visualizations: ROC and Precision-Recall curves were plotted to assess model performance. Confusion matrix visualizations were also used.
+**Evaluation**
+<u>Performance Metrics<u>: The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics.
+<u>Visualizations<u>: ROC and Precision-Recall curves were plotted to assess model performance. Confusion matrix visualizations were also used.
 
-Future Research & Improvements
-Advanced Architectures: Consider incorporating architectures like ResNet or EfficientNet, or applying transfer learning with pretrained models.
-Additional Data Augmentation: Experiment with additional data augmentation techniques or synthetic data generation to improve model generalization.
-Integration of Advanced Technologies: Potential to integrate technologies like PyTorch, Whisper (OpenAI’s automatic speech recognition system), or Gradio for enhanced user interaction.
+**Future Research & Improvements**
+<u>Advanced Architectures<u>: Consider incorporating architectures like ResNet or EfficientNet, or applying transfer learning with pretrained models.
+<u>Additional Data Augmentation<u>: Experiment with additional data augmentation techniques or synthetic data generation to improve model generalization.
+<u>Integration of Advanced Technologies<u>: Potential to integrate technologies like PyTorch, Whisper (OpenAI’s automatic speech recognition system), or Gradio for enhanced user interaction.
 
-Gradio Application: SkinLink, the Melanoma Detector
+**Gradio Application**: SkinLink, the Melanoma Detector
 
-Overview
+**Overview**
 SkinLink is a user-friendly Gradio application that allows patients to upload images of their skin lesions for analysis. The application uses a trained CNN model to predict the likelihood of melanoma. The results can be reviewed by doctors, who can then provide feedback to the patients. The app includes a bonus feature: language translation, enabling doctors to communicate results to patients who may not speak English.
 
-Features
+**Features**
 
 Image Upload: Patients can upload images of their skin lesions.
 Prediction: The model predicts whether the lesion is benign or malignant.
 Doctor Feedback: Doctors can review the results and provide feedback.
 Language Translation: Translation feature to help communicate with non-English speaking patients.
 
-Future Improvements for the Gradio App
+**Future Improvements for the Gradio App**
 Enhanced Interactivity: Add more interactive features like voice input using Whisper.
 Expanded Language Support: Include more languages for translation to cater to a broader audience.
 Advanced Visualizations: Integrate advanced visualizations to better explain the predictions to the patients and doctors.
 
-Model Performance Metrics Overview
+**Model Performance Metrics Overview**
 Title: Model Performance Metrics Overview
 Subtitle: Evaluating Accuracy, Precision, and Loss Across Training Epochs
 
+![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/model_performance_optimization.png)
+
 This image showcases the model's performance metrics, including the ROC curve, Precision-Recall curve, training accuracy, and training loss over multiple epochs. The high AUC-ROC and precision-recall scores indicate strong model performance, while the accuracy and loss plots highlight the model's training and validation performance over time.
 
-Making & Optimizing the Model
+**Making & Optimizing the Model**
 Title: Making & Optimizing the Model
 Subtitle: How We Refined Our CNN Model to Ensure High Accuracy & Effective Generalization, Preparing It for Real-World Applications
 
+![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/Making%20%26%20Optimizing%20the%20Model.png)
 
 This image outlines the steps taken in refining the CNN model, from defining the architecture to fine-tuning the model for optimal performance. The process included the use of various callbacks, training and model evaluation techniques, and fine-tuning with TensorFlow Keras optimizers to achieve a high accuracy score of 93%.
