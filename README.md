@@ -20,8 +20,26 @@ For Patients: Faster and more accurate diagnosis can lead to earlier interventio
 **Project Summary**
 Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
+Gradio Applications
+1. User Application
+The first Gradio application is designed for users (patients). In this application, users can upload images of their skin lesions. The app then utilizes the trained CNN model to predict whether the lesion is benign or malignant. This quick and accessible tool allows users to get an initial assessment of their skin condition, which can prompt further medical consultation if necessary.
+
+Features:
+Image Upload: Users can easily upload images of their skin lesions.
+Prediction: The app predicts whether the lesion is benign or malignant.
+User Feedback: Users receive immediate feedback, helping them understand their skin health and whether they should seek further medical advice.
 
 <img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
+
+2. Doctor Application
+The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can examine the predicted results, and using a voice memo feature, they can record and send personalized feedback to the patient. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
+
+Features:
+Image Review: Doctors can access and review the images uploaded by patients.
+Voice Memo: Doctors can record a voice memo with their analysis and send it directly to the patient, providing a personal touch and detailed feedback.
+Enhanced Communication: The app bridges the gap between patient self-assessment and professional medical consultation.
+
+<img src="https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f" alt="Physician's Assistant for Melanoma Detection" width="600" height="800"/>
 
 **Data Preprocessing**
 Resizing: Images are resized to 300x300 pixels.
