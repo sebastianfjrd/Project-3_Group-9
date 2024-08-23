@@ -67,6 +67,6 @@ This image showcases the model's performance metrics, including the ROC curve, P
 Title: Making & Optimizing the Model
 Subtitle: How We Refined Our CNN Model to Ensure High Accuracy & Effective Generalization, Preparing It for Real-World Applications
 
-![Alt Text]](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/Making%20%26%20Optimizing%20the%20Model.png)
+![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/Making%20%26%20Optimizing%20the%20Model.png)
 
 This image outlines the steps taken in refining the CNN model, from defining the architecture to fine-tuning the model for optimal performance. The process included the use of various callbacks, training and model evaluation techniques, and fine-tuning with TensorFlow Keras optimizers to achieve a high accuracy score of 93%.
