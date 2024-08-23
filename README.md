@@ -1,6 +1,6 @@
 # Melanoma /Skin Cancer Detection Using CNN Detection Project
 
-##SkinLink for Melanoma Detection##
+**SkinLink for Melanoma Detection**
 
 
 ![Physician's Assistant for Melanoma Detection](https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f)
@@ -21,7 +21,7 @@ For Patients: Faster and more accurate diagnosis can lead to earlier interventio
 Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
 
-<img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="400" height="400"/>
+<img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="800" height="800"/>
 
 **Data Preprocessing**
 Resizing: Images are resized to 300x300 pixels.
