@@ -2,7 +2,7 @@
 
 ## **SkinLink for Melanoma Detection**
 
-##**Executive Summary**
+## **Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
 **Early Detection is Key**
