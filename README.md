@@ -2,10 +2,6 @@
 
 **SkinLink for Melanoma Detection**
 
-
-![Physician's Assistant for Melanoma Detection](https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f)
-
-
 ##**Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
@@ -31,15 +27,15 @@ User Feedback: Users receive immediate feedback, helping them understand their s
 
 <img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
 
-2. Doctor Application
+**2. Doctor Application**
 The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can examine the predicted results, and using a voice memo feature, they can record and send personalized feedback to the patient. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
 
-Features:
+**Features:**
 Image Review: Doctors can access and review the images uploaded by patients.
 Voice Memo: Doctors can record a voice memo with their analysis and send it directly to the patient, providing a personal touch and detailed feedback.
 Enhanced Communication: The app bridges the gap between patient self-assessment and professional medical consultation.
 
-<img src="https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f" alt="Physician's Assistant for Melanoma Detection" width="600" height="800"/>
+<img src="https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f" alt="Physician's Assistant for Melanoma Detection" width="1000" height="800"/>
 
 **Data Preprocessing**
 Resizing: Images are resized to 300x300 pixels.
