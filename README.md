@@ -5,6 +5,23 @@
 ## **Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
+Melanoma instances are growing and estimated to grow in the next decade. However mortality rate linked to melanoma is trending lower. According to American Cancer about 100,000 new melanoma incidents are diagnozed. Average annual mortality is around 8,000. 
+
+![image](https://github.com/user-attachments/assets/007ed606-2f74-40d7-8cc8-0453c918c808)
+Source: [Cancer Therapy Advisor](https://www.cancertherapyadvisor.com/features/american-cancer-society-2021-statistics-show-continuous-decline/)
+
+![image](https://github.com/user-attachments/assets/b4b7754b-1522-4c6e-83aa-2253360fe287)
+Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
+
+![image](https://github.com/user-attachments/assets/410df380-57ba-4b37-b543-27926f14b73d)
+Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
+
+![image](https://github.com/user-attachments/assets/d21bdca7-abc3-4bde-8261-d6ea3f17e8dd)
+Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
+
+![image](https://github.com/user-attachments/assets/7fa34bc5-a21a-441a-bb00-d3b96fbe8aa3)
+Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
+
 **Early Detection is Key**
 Skin cancer is the most common type of cancer. Early detection is crucial for effective treatment. Visual examination by a dermatologist, followed by a biopsy, is the standard procedure for diagnosis. This project aims to provide a tool that helps in the early detection of melanoma by analyzing images of skin lesions.
 
@@ -18,25 +35,35 @@ Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
 
 ***Gradio Applications***
-1. User Application
+**1. Patient's AI Assistant for Melanoma Detection App
 The first Gradio application is designed for users (patients). In this application, users can upload images of their skin lesions. The app then utilizes the trained CNN model to predict whether the lesion is benign or malignant. This quick and accessible tool allows users to get an initial assessment of their skin condition, which can prompt further medical consultation if necessary.
 
 Features:
-Image Upload: Users can easily upload images of their skin lesions.
-Prediction: The app predicts whether the lesion is benign or malignant.
-User Feedback: Users receive immediate feedback, helping them understand their skin health and whether they should seek further medical advice.
+- Image Upload: Users can easily upload images of their skin lesions.
+- User can choose a language in which they wish to recive the AI predicted results
+- Users can also enter their ZIP which will be used to get local medical professional information from [NPI Registry](https://npiregistry.cms.hhs.gov/api/?version=2.1&number=&enumeration_type=NPI-1&taxonomy_description=Oncology&postal_code=10001&country_code=US&limit=5)
+- User uploaded image will then be normalized and batch dimenstion added
+- Normalized image will be fed into CNN Model and prediction will be received
+- Predicted results text will be displayed in text output box in the language specified by the user
+- Prediction: The app will predict whether the lesion is benign or malignant along with degree of confidence.
+- User Feedback: Users receive immediate feedback, helping them understand their skin health and whether they should seek further medical advice.
 
 <img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
 
-**2. Doctor Application**
-The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can examine the predicted results, and using a voice memo feature, they can record and send personalized feedback to the patient. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
+**2. Doctor's AI Assistant for Melanoma Detection App**
+The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can speak into the app and request a patient's results. App then will fetc examine the predicted results. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
 
 **Features:**
-Image Review: Doctors can access and review the images uploaded by patients.
-Voice Memo: Doctors can record a voice memo with their analysis and send it directly to the patient, providing a personal touch and detailed feedback.
-Enhanced Communication: The app bridges the gap between patient self-assessment and professional medical consultation.
-
-<img src="https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f" alt="Physician's Assistant for Melanoma Detection" width="1000" height="800"/>
+- Input: Doctors can speak in English or Spanish or French and request for results of a patient.
+- App will the recognize the spoken text and get appropriate language (English, Spanish or French)
+- If spoken language is Spanish or French, spoken text will be translated intoo English
+- From this text just the patient's name will be extracted
+- Using the patient's name App will then read the patient's image from Google Cloud Storage
+- Image will then be normalized and batch dimenstion added
+- App will read previously saved CNN Model from Google Cloud Storage 
+- Normalized image will be fed into CNN Model and prediction will be received
+- Predicted results text will be displayed in text output box in the original language that the user initially spoke.
+- The app will predict whether the lesion is benign or malignant along with degree of confidence.
 
 ![image](https://github.com/user-attachments/assets/18ca0e56-9e12-47ca-aba5-6cc620868862)
 
@@ -48,7 +75,7 @@ Normalization: Pixel values are scaled to the range [0, 1].
 Data Augmentation: Techniques such as random rotation, translation, zoom, and flipping are applied to increase the diversity of the training set and improve the model’s accuracy.
 
 **Model Building**
-A custom CNN architecture was built from scratch using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
+A custom CNN model was built using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Batch normalization function also was added to help the model converge quicker. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
 
 **Model Training**
 <u>Optimizeu<u>: Adam optimizer
@@ -75,10 +102,14 @@ Subtitle: Evaluating Accuracy, Precision, and Loss Across Training Epochs
 
 This image showcases the model's performance metrics, including the ROC curve, Precision-Recall curve, training accuracy, and training loss over multiple epochs. The high AUC-ROC and precision-recall scores indicate strong model performance, while the accuracy and loss plots highlight the model's training and validation performance over time.
 
+Here is a plot of model predictions vs actual predictions -
+![image](https://github.com/user-attachments/assets/2eeecf4f-cc87-4123-8089-99fb32357509)
+
+
 **Future Research & Improvements**
 <u>Advanced Architectures<u>: Consider incorporating architectures like ResNet or EfficientNet, or applying transfer learning with pretrained models.
 <u>Additional Data Augmentation<u>: Experiment with additional data augmentation techniques or synthetic data generation to improve model generalization.
-<u>Integration of Advanced Technologies<u>: Potential to integrate technologies like PyTorch, Whisper (OpenAI’s automatic speech recognition system), or Gradio for enhanced user interaction.
+<u>Integration of Advanced Technologies<u>: Add automatic voice recognition system to the App so that Doctors do not have to do four steps (record, speak, stop and submit) to get results from the App. Integrate Patient AI assistant and Doctor's AI assistant into one portal. 
 
 **Gradio Application**: SkinLink, the Melanoma Detector
 
