@@ -5,10 +5,10 @@
 ## **Executive Summary**
 This project focuses on detecting melanoma, a dangerous form of skin cancer, through image analysis using a Convolutional Neural Network (CNN). The dataset sourced from Kaggle used for training consisted of 10,605 images of skin lesions, categorized as benign or malignant. The model's performance is evaluated using accuracy, precision, recall, F1 score, AUC-ROC, and a confusion matrix. The goal is to provide an automated system that assists both patients and medical professionals in the early detection of melanoma, potentially improving survival rates.
 
-Melanoma instances are growing and estimated to grow in the next decade. However mortality rate linked to melanoma is trending lower. According to American Cancer about 100,000 new melanoma incidents are diagnozed. Average annual mortality is around 8,000. 
-
 ![image](https://github.com/user-attachments/assets/007ed606-2f74-40d7-8cc8-0453c918c808)
 Source: [Cancer Therapy Advisor](https://www.cancertherapyadvisor.com/features/american-cancer-society-2021-statistics-show-continuous-decline/)
+
+Melanoma instances are growing and estimated to grow in the next decade. However mortality rate linked to melanoma is trending lower. According to American Cancer about 100,000 new melanoma incidents are diagnozed. Average annual mortality is around 8,000. 
 
 ![image](https://github.com/user-attachments/assets/b4b7754b-1522-4c6e-83aa-2253360fe287)
 Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
