@@ -73,9 +73,10 @@ The second Gradio application is tailored for doctors. This application enables 
 Resizing: Images are resized to 300x300 pixels.
 Normalization: Pixel values are scaled to the range [0, 1].
 Data Augmentation: Techniques such as random rotation, translation, zoom, and flipping are applied to increase the diversity of the training set and improve the model’s accuracy.
+Dataset was split into train, validation and test datasets. Then they were saved in pickle files to be used later for building AI model. 
 
 **Model Building**
-A custom CNN model was built using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Batch normalization function also was added to help the model converge quicker. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
+Preprocessed image dataset pickle files were read. A custom CNN model was built using TensorFlow/Keras. The architecture includes multiple convolutional layers followed by max pooling, flattening, and fully connected layers. Batch normalization function also was added to help the model converge quicker. Regularization techniques like Dropout and L2 regularization were applied to prevent overfitting.
 
 **Model Training**
 <u>Optimizeu<u>: Adam optimizer
@@ -88,7 +89,7 @@ Subtitle: How We Refined Our CNN Model to Ensure High Accuracy & Effective Gener
 
 ![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/Making%20%26%20Optimizing%20the%20Model.png)
 
-This image outlines the steps taken in refining the CNN model, from defining the architecture to fine-tuning the model for optimal performance. The process included the use of various callbacks, training and model evaluation techniques, and fine-tuning with TensorFlow Keras optimizers to achieve a high accuracy score of 93%.
+This image outlines the steps taken in refining the CNN model, from defining the architecture to fine-tuning the model for optimal performance. The process included the use of various callbacks, training and model evaluation techniques, and fine-tuning with TensorFlow Keras optimizers to achieve a high accuracy score of 93%. Custom CNN Model keras file was saved in Google Cloud Storage for later retrieval. 
 
 **Evaluation**
 <u>Performance Metrics<u>: The model achieved a test accuracy of 92.01%, with corresponding precision, recall, F1 score, and AUC-ROC metrics.
@@ -101,6 +102,7 @@ Subtitle: Evaluating Accuracy, Precision, and Loss Across Training Epochs
 ![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/model_performance_optimization.png)
 
 This image showcases the model's performance metrics, including the ROC curve, Precision-Recall curve, training accuracy, and training loss over multiple epochs. The high AUC-ROC and precision-recall scores indicate strong model performance, while the accuracy and loss plots highlight the model's training and validation performance over time.
+
 ![image](https://github.com/user-attachments/assets/aeb9b964-ac57-4171-b78c-fb28d0ac57c1)
 
 ![image](https://github.com/user-attachments/assets/1a998b81-7a36-4f18-841b-53453cd80db4)
