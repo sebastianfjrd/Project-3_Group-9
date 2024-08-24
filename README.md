@@ -101,6 +101,10 @@ Subtitle: Evaluating Accuracy, Precision, and Loss Across Training Epochs
 ![Alt Text](https://github.com/sebastianfjrd/Project-3_Group-9/blob/main/model_performance_optimization.png)
 
 This image showcases the model's performance metrics, including the ROC curve, Precision-Recall curve, training accuracy, and training loss over multiple epochs. The high AUC-ROC and precision-recall scores indicate strong model performance, while the accuracy and loss plots highlight the model's training and validation performance over time.
+![image](https://github.com/user-attachments/assets/aeb9b964-ac57-4171-b78c-fb28d0ac57c1)
+
+![image](https://github.com/user-attachments/assets/1a998b81-7a36-4f18-841b-53453cd80db4)
+
 
 ## CNN Model Predictions: 
 Here is a plot of model predictions vs actual predictions done on some Test Data set images -
