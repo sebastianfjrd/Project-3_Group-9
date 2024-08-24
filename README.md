@@ -37,6 +37,7 @@ Voice Memo: Doctors can record a voice memo with their analysis and send it dire
 Enhanced Communication: The app bridges the gap between patient self-assessment and professional medical consultation.
 
 <img src="https://github.com/user-attachments/assets/10b9f8e5-a2f3-429e-b971-4ca7f4bb9b8f" alt="Physician's Assistant for Melanoma Detection" width="1000" height="800"/>
+
 ![image](https://github.com/user-attachments/assets/18ca0e56-9e12-47ca-aba5-6cc620868862)
 
 
