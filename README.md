@@ -35,7 +35,7 @@ Dataset
 The project utilizes a melanoma skin cancer dataset containing 10,605 images labeled as benign and malignant. These images were collected from various sources and are split into training, validation, and test sets.
 
 # Gradio Apps
-## 1. Patient's AI Assistant for Melanoma Detection App
+## 1. Patient's AI Assistant App for Early Melanoma Detection
 The first Gradio application is designed for users (patients). In this application, users can upload images of their skin lesions. The app then utilizes the trained CNN model to predict whether the lesion is benign or malignant. This quick and accessible tool allows users to get an initial assessment of their skin condition, which can prompt further medical consultation if necessary.
 
 Features:
@@ -50,7 +50,7 @@ Features:
 
 <img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
 
-## 2. Doctor's AI Assistant for Melanoma Detection App 
+## 2. Doctor's AI Assistant App for Melanoma Detection
 The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can speak into the app and request a patient's results. App then will fetc examine the predicted results. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
 
 **Features:**
