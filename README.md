@@ -105,6 +105,8 @@ This image showcases the model's performance metrics, including the ROC curve, P
 ## CNN Model Predictions: 
 Here is a plot of model predictions vs actual predictions done on some Test Data set images -
 
+![image](https://github.com/user-attachments/assets/aaafeaff-ae07-49ee-9936-d89315b2c6af)
+
 ![image](https://github.com/user-attachments/assets/2eeecf4f-cc87-4123-8089-99fb32357509) ![image](https://github.com/user-attachments/assets/a2322ea3-2ec3-410a-a54b-14e24617aca3)
 
 
