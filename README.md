@@ -51,8 +51,8 @@ Features:
 
 <img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
 
-## 2. Doctor's AI Assistant App for Melanoma Detection
-The second Gradio application is tailored for doctors. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can speak into the app and request a patient's results. App then will fetc examine the predicted results. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
+## 2. Physician's AI Assistant App for Melanoma Detection
+The second Gradio application is tailored for physicians. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can speak into the app and request a patient's results. App then will fetc examine the predicted results. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
 
 **Features:**
 - Input: Doctors can speak in English or Spanish or French and request for results of a patient.
