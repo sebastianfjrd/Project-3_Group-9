@@ -22,7 +22,7 @@ Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/
 ![image](https://github.com/user-attachments/assets/7fa34bc5-a21a-441a-bb00-d3b96fbe8aa3)
 Source: [American Cancer Society](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2024/2024-cancer-facts-and-figures-acs.pdf)
 
-**Early Detection is Key**
+**Early Detection is Key:**
 Skin cancer is the most common type of cancer. Early detection is crucial for effective treatment. Visual examination by a dermatologist, followed by a biopsy, is the standard procedure for diagnosis. This project aims to provide a tool that helps in the early detection of melanoma by analyzing images of skin lesions.
 
 **Benefits to Patients & Medical Professionals**
