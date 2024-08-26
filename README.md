@@ -110,7 +110,8 @@ This image showcases the model's performance metrics, including the ROC curve, P
 
 
 ## CNN Model Predictions: 
-Here is a plot of model predictions vs actual predictions done on some Test Data set images -
+Here is a plot of model predictions vs actual predictions done on some Test Data set images. 
+(Note: Value 0 = Benign; Value 1 = Malignant)
 
 ![image](https://github.com/user-attachments/assets/cec78831-3211-4b97-a4f4-786b9f70be61)
 ![image](https://github.com/user-attachments/assets/a2322ea3-2ec3-410a-a54b-14e24617aca3)
