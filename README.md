@@ -48,8 +48,9 @@ Features:
 - Predicted results text will be displayed in text output box in the language specified by the user
 - Prediction: The app will predict whether the lesion is benign or malignant along with degree of confidence.
 - User Feedback: Users receive immediate feedback, helping them understand their skin health and whether they should seek further medical advice.
+  
+![image](https://github.com/user-attachments/assets/8156f516-2331-448b-8c4b-b711ee8de4f7)
 
-<img src="https://github.com/user-attachments/assets/f9897e23-d224-4831-b7e3-94093a7093a8" alt="Model Performance Metrics" width="600" height="800"/>
 
 ## 2. Physician's AI Assistant App for Melanoma Detection
 The second Gradio application is tailored for physicians. This application enables medical professionals to review the images uploaded by their patients and provide a more detailed analysis. The doctor can speak into the app and request a patient's results. App then will fetc examine the predicted results. This system streamlines the communication between patients and doctors, facilitating quicker and more efficient follow-up.
