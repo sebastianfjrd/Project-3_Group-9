@@ -68,7 +68,7 @@ The second Gradio application is tailored for physicians. This application enabl
 - The app will predict whether the lesion is benign or malignant along with degree of confidence.
 
 ![image](https://github.com/user-attachments/assets/18ca0e56-9e12-47ca-aba5-6cc620868862)
-[Quick Demo Link](https://www.loom.com/share/3071ea5743c640e7a7020f29e06b3c7b?sid=3af03942-6257-47ae-b7f4-7542a7c68108)
+[**Quick Demo Link**](https://www.loom.com/share/2dd8a5aa2f6c4bf9bf8ad18a38dffbed?t=0)
 
 
 **Data Preprocessing**
